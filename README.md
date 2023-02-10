@@ -5,6 +5,7 @@ This is a project that I will be working in order to learn the capabilities of t
 - TypeScript in React
 - Tailwind CSS 3
 - Socket IO
+- Jest
 
 I have no industry experience with these tools as of the start of this developement on February 2023
 This is also my 5th time restarting this app... so hopefully this is the one

@@ -1,12 +1,10 @@
 import * as React from 'react';
+import GameModule from '../../modules/game-module/game-module';
 
-export interface ItestProps {
-}
-
-export default function mainpage() {
+export default function PlayScreen() {
     return (
         <div>
-            yep
+            <GameModule />
         </div>
     );
 }
