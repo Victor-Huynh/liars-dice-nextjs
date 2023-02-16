@@ -1,4 +1,6 @@
-export type BidT = {
-    face: number;
-    quantity: number;
+interface IBid {
+    Bid: {
+        face: number;
+        quantity: number;
+    }
 }

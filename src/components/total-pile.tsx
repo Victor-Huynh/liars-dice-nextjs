@@ -1,9 +1,13 @@
 import React from 'react';
 
-export default function TotalPile() {
+const TotalPile = (props: { dice: number[] }) => {
     return (
-        <div>
-            TotalPileComponent
-        </div>
+        <>
+            <div>
+                TotalPile: {props.dice}
+            </div>
+        </>
     );
 };
+
+export default TotalPile;

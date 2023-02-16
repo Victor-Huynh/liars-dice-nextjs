@@ -1,18 +1,14 @@
 import React from 'react';
+import { IPlayer } from './definitions/player';
 import Player from './player';
 
-const ExamplePlayer = {
-    PlayerID: 1,
-    DisplayName: "Deputy",
-    CurrentBid: [],
-    Dice: [],
-    RemainingDice: []
-}
-
-export default function Seat() {
+const Seat = (props: { player: IPlayer, seatNumber: number }) => {
     return (
         <>
-            <Player player={ExamplePlayer} />
+            <div>SeatNumber is {props.seatNumber}</div>
+            <Player player={props.player} />
         </>
     );
 };
+
+export default Seat;

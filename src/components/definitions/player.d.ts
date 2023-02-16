@@ -1,12 +1,11 @@
-import Bid from './bid';
+import { Bid } from './bid';
 
-declare module 'playerM' {
-    class PlayerI {
-        playerID: number;
-        displayName: string;
-        remainingDice: number;
-        currentBid: Bid;
-        dice: Dice;
-    }
-    export = PlayerI;
+interface IPlayer {
+    playerID: number;
+    displayName: string;
+    // displayPicture: ImageData; TODO
+    currentBid: Bid;
+    dice: number[];
+    exposedDice: number;
+    remainingDice: number;
 }

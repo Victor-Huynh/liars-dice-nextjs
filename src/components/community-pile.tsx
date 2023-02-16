@@ -1,9 +1,13 @@
 import React from 'react';
 
-export default function CommunityPile() {
+const CommunityPile = (props: { dice: number[] }) => {
     return (
-        <div>
-            CommunityPileComponent
-        </div>
+        <>
+            <div>
+                CommunityPile: {props.dice}
+            </div>
+        </>
     );
 };
+
+export default CommunityPile;
