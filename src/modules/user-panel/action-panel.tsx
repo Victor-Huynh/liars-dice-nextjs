@@ -5,8 +5,11 @@ import { Button } from "@material-tailwind/react";
 const ActionPanel = (props: { quantity: number, face: number }) => {
     return (
         <>
-            <Button>{props.quantity} {props.face}'s</Button>
-            <Button>Liar!</Button>
+            <div className='grid justify-items-center'>
+                <span>Actions</span>
+                <Button>{props.quantity} {props.face}'s</Button>
+                <Button>Liar!</Button>
+            </div>
         </>
     );
 }

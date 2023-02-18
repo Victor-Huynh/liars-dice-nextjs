@@ -1,20 +1,28 @@
 'use client'
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Button } from "@material-tailwind/react";
 
 function addAmount(amount: number) {
     console.log(`hello! ${amount}`);
 }
 
-const QtyModBtn = (props: { amount: number }) => {
+const QtyModBtn = (props: { increment: number }) => {
+    const [quantity, setQuantity] = React.useState(0);
+
+    // setQuantity(increment: number) => {
+    //     quantity += increment;
+    // }
+
+    useEffect(() => {
+        console.log(`quantity: ${quantity}`);
+    }, [quantity]);
+
     return (
         <>
             {/* need styling and stuff */}
-            <div>
-                <Button className="h-12" variant="outlined" color="green" onClick={() => addAmount(props.amount)}>
-                    {props.amount > 0 ? "+" + props.amount : "-" + props.amount}
-                </Button>
-            </div>
+            <Button className="large" variant="outlined" color="green" onClick={() => setQuantity(quantity + props.increment)}>
+                {props.increment > 0 ? "+" + props.increment : props.increment}
+            </Button>
         </>
     );
 }

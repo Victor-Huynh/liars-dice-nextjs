@@ -5,12 +5,14 @@ import React from 'react';
 const QuantityPanel = () => {
     return (
         <>
-            <div className="relative grid">
-                QuantityPanel
-                {/* Consider using Range from tailwindcss instead? */}
-                <Slider panelHeight={100} panelWidth={100} maxBet={20} />
-                <QtyModBtn amount={1} />
-                <QtyModBtn amount={-1} />
+            <div className='grid justify-items-center'>
+                <div className="grid">
+                    {/* Consider using Range from tailwindcss instead? Also consider just not using a range component LOL*/}
+                    {/* <Slider panelHeight={100} panelWidth={100} maxBet={20} /> */}
+                    <span>Quantity</span>
+                    <QtyModBtn increment={1} />
+                    <QtyModBtn increment={-1} />
+                </div>
             </div>
         </>
     );

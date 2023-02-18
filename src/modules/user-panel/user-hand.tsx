@@ -8,16 +8,18 @@ const UserHand = (props: { dice: number[] }) => {
         // console.log("generating hand...");
         dice.map((die) => {
             // console.log("die: " + die);
-            generatedHand.push(<Die face={die} />);
+            generatedHand.push(<Die key={die} face={die} />);
         });
     };
 
     generateHand(props.dice);
 
     return (
-        <div className='flex'>
-            UserHand
-            {generatedHand}
+        <div className='grid'>
+            <h1 className='text-center'>Your Hand</h1>
+            <div className='flex justify-center'>
+                {generatedHand}
+            </div>
         </div>
     );
 }

@@ -3,5 +3,9 @@
     "next/core-web-vitals",
     "next",
     "prettier"
-  ]
+  ],
+  "rules": {
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn"
+  }
 }
