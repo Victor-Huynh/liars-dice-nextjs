@@ -9,8 +9,8 @@ const UserPanel = () => {
         <>
             <QuantityPanel />
             <FacePanel />
-            <ActionPanel />
-            <UserHand />
+            <ActionPanel quantity={2} face={5} />
+            <UserHand dice={[1, 2, 2, 3, 5]} />
         </>
     );
 }

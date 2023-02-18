@@ -7,7 +7,9 @@ export default function GameModule() {
     return (
         <>
             <Lobby />
-            <UserPanel />
+            <div className='absolute inset-y-3/4 flex'>
+                <UserPanel />
+            </div>
         </>
     );
 }

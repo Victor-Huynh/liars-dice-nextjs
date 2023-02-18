@@ -5,7 +5,7 @@ import React from 'react';
 const QuantityPanel = () => {
     return (
         <>
-            <div>
+            <div className="relative grid">
                 QuantityPanel
                 {/* Consider using Range from tailwindcss instead? */}
                 <Slider panelHeight={100} panelWidth={100} maxBet={20} />
