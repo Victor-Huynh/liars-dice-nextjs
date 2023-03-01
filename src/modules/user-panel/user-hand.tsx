@@ -6,9 +6,11 @@ const UserHand = (props: { dice: number[] }) => {
 
     const generateHand = (dice: number[]) => {
         // console.log("generating hand...");
+        var count = 0;
         dice.map((die) => {
             // console.log("die: " + die);
-            generatedHand.push(<Die key={die} face={die} />);
+            generatedHand.push(<Die key={"handDie" + count} face={die} />);
+            count++;
         });
     };
 

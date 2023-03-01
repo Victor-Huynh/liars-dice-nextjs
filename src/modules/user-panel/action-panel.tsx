@@ -1,13 +1,18 @@
 'use client'
-import React from 'react';
+import React, { useContext } from 'react';
 import { Button } from "@material-tailwind/react";
+import { UserContext } from './UserContext';
+import Die from '@/components/die';
 
-const ActionPanel = (props: { quantity: number, face: number }) => {
+const ActionPanel = () => {
+    const currentQuantity = useContext(UserContext).currentQuantity;
+    const currentFace = useContext(UserContext).currentFace;
+
     return (
         <>
             <div className='grid justify-items-center'>
                 <span>Actions</span>
-                <Button>{props.quantity} {props.face}'s</Button>
+                <Button><h1>{currentQuantity}</h1><Die face={currentFace} ></Die></Button>
                 <Button>Liar!</Button>
             </div>
         </>

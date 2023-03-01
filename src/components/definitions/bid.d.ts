@@ -1,6 +1,4 @@
 interface IBid {
-    Bid: {
-        face: number;
-        quantity: number;
-    }
+    face: number;
+    quantity: number;
 }

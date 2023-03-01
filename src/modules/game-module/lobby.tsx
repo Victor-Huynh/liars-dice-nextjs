@@ -20,7 +20,7 @@ const Lobby = () => {
 
     // Mock Data
     // playerID, displayName, currentBid, dice, exposedDice, remainingDice
-    const ExampleBid: IBid["Bid"] = {
+    const ExampleBid: IBid = {
         face: 2,
         quantity: 4
     }
