@@ -1,4 +1,4 @@
 interface IBid {
-    face: number;
     quantity: number;
+    face: number;
 }

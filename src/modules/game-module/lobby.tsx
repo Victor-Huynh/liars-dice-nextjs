@@ -1,4 +1,3 @@
-import CommunityPile from '@/components/community-pile';
 import { IPlayer } from '@/components/definitions/player';
 import Seat from '@/components/seat';
 import TotalPile from '@/components/total-pile';
@@ -32,14 +31,14 @@ const Lobby = () => {
         exposedDice: 2,
         remainingDice: 3
     };
-    const ExampleCommunityPile = [0, 2, 3];
+    // const ExampleCommunityPile = [0, 2, 3];
     const ExampleTotalPile = [1, 2, 3, 4, 4];
     // End of Mock Data
 
     return (
         <>
             <Seat player={ExamplePlayer} seatNumber={1} />
-            <CommunityPile dice={ExampleCommunityPile} />
+            {/* <CommunityPile dice={ExampleCommunityPile} /> */}
             <TotalPile dice={ExampleTotalPile} />
         </>
     );
